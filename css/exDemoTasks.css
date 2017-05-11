@@ -1,0 +1,67 @@
+.boxShadow{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5);/*for ie6,7,8*/  
+	background-color: white;  
+	-moz-box-shadow:0 2px 5px #969696;/*firefox*/  
+	-webkit-box-shadow:0 2px 5px #969696;/*webkit*/  
+	box-shadow:0 2px 5px #969696;/*opera或ie9*/ 
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+}
+.menu_down{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+.menu_down:hover{
+	color: deepskyblue;
+}
+.like_btn_control ul{
+	width: 100%;
+	border-left:2px solid orange ;
+	margin-bottom:2px ;
+	cursor: pointer;
+	background: white;
+}
+.like_btn_control li{
+	padding: 10px;
+	vertical-align:middle;
+}
+.addTask{
+	margin-top: 20px;
+	padding: 10px ;
+	color: deepskyblue;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+.addTask:hover{
+	background-color: #F5F5F5;
+}
+#task{
+	position: relative;
+}
+#task .task_tip{
+	background: #ECECEC;
+	width: 280px;
+	padding: 10px;
+	height: 600px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+#task .new_task_tip{
+	background: #ECECEC;
+	width: 280px;
+	float: left;
+	line-height: 60px;
+	font-size: 15px;
+	padding:0 10px 10px 10px;
+	color: darkgray;
+	cursor: pointer;
+}
+#task .new_task_tip:hover{
+	color: deepskyblue;
+}

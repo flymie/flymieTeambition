@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<!--start 我的-->
+			<!-- Modal -->
+		<div class="modal fade" id="my" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" >
+		  <div class="modal-dialog" role="document" style="width: 100%;">
+		    <div class="modal-content container">
+		        <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        </button>
+			        <ul class="nav navbar-nav" id="nav_sec" style="left: 40%;">
+			        	<li>
+							<a href="lastest.html" class="modal-title" target="modelMyContent">近期的事情</a>
+						</li>
+						<li>
+							<a href="task.html" class="modal-title" target="modelMyContent">任务</a>
+						</li>
+						<li>
+			       			<a href="#" class="modal-title" target="modelMyContent">日程</a>	
+						</li>
+						<li>
+							<a href="#" class="modal-title" target="modelMyContent">收藏</a>
+						</li>
+						<li>
+							<a href="#" class="modal-title" target="modelMyContent">笔记</a>
+						</li>				
+					</ul>	        
+		        </div>
+		      	<div class="modal-body">
+		      		<iframe name="modelMyContent" frameborder="0" width="100%" height="700px" src="lastest.html"></iframe>
+		        </div>
+		    </div>
+		  </div>
+		</div>
+		<!--end 我的 -->
+		<!--strat 创建企业-->		
+			<!-- Modal -->
+		<div class="modal fade" id="createPro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		    <div class="modal-dialog" role="document" style="width: 350px;">
+			    <div class="modal-content">
+			        <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<span aria-hidden="true">&times;</span>
+				        </button>
+				        <h4 class="modal-title" id="myModalLabel">创建企业</h4>
+			        </div>
+			      <div class="modal-body">
+			      	<form>
+			      		<div class="form-group">
+			      			<input type="text" placeholder="企业名称" class="form-control"/>
+			      		</div>
+			      		<div class="form-group">
+					        <select id="number" name="number" class="form-control">
+					          <option selected="selected">1~30人</option>
+					          <option>30~100人</option>
+					          <option>100~500人</option>
+					          <option>500人以上</option>
+					        </select>
+			      		</div>
+			      		<div class="form-group">
+			      			<input type="text" placeholder="创建人姓名" class="form-control"/>
+			      		</div>
+			      		<div class="form-group">
+			      			<input type="text" placeholder="手机号码" class="form-control"/>
+			      		</div>
+			      	</form>
+			      </div>
+			        <div class="modal-footer">
+			            <button type="button" class="btn btn-block btn-primary">创建企业</button>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+		<!--end 创建企业-->
+		<!--start 发起聊天-->
+		<div class="modal fade" id="startTalk" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3">
+		    <div class="modal-dialog" role="document" style="width: 800px;">
+			    <div class="modal-content" style="height: 600px;">
+			        <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<span aria-hidden="true">&times;</span>
+				        </button>
+				        <h4 class="modal-title text-center" id="myModalLabe3">发起聊天</h4>
+			        </div>
+			        <div class="modal-body clearfix" style="padding: 0;">
+			      		<div class="pull-left">
+			      			<ul class="nav nav-stacked" >
+			      				<li>
+			      					<span>私信</span>
+			      				</li>
+			      				<li>
+			      					项目
+			      				</li>
+			      				<li>
+			      					群组
+			      				</li>
+			      			</ul>
+			      		</div>
+			      		<div class="pull-left" style="padding: 10px;">
+			      			<form class=""> 
+			      				<div class="form-group">
+			      					<input type="text"  class="form-control" placeholder="搜索成员"/>
+			      				</div>
+			      				<div>
+			      					<p>
+			      						合作过的成员
+			      					</p>
+			      					<img src="#" />
+			      					<span>吴翔</span>
+			      					<span>创建了新标签</span>
+			      				</div>
+			      			</form>
+			      			<form class="hidden"> 
+			      				<div class="form-group">
+			      					<input type="text"  class="form-control" placeholder="搜索项目"/>
+			      				</div>
+			      				<div>
+			      					<p>
+			      						个人项目
+			      					</p>
+			      					<img src="#" />
+			      					<span>新手引导</span>
+			      				</div>
+			      			</form>
+			      			<form class="hidden"> 
+			      				<div class="form-group">
+			      					<input type="text"  class="form-control" placeholder="搜索群组"/>
+			      				</div>
+			      			</form>
+			      		</div>
+			        </div>
+			    </div>
+		    </div>
+		</div>		
+		<!--end 发起聊天-->
+		<!--start 消息-->
+		<div class="modal fade" id="user_msg" tabindex="-1" role="dialog" aria-labelledby="myModalLabe4">
+		    <div class="modal-dialog" role="document" style="width: 800px;">
+			    <div class="modal-content" style="height: 600px;">
+			        <div class="modal-header">
+				        <div class="dropdown nav modal-title">				        	
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					        	<span aria-hidden="true">&times;</span>
+					        </button>
+				        	<div id="myModalLabe4" data-toggle="dropdown" class="navbar-brand">
+				        		<span class=""></span>
+				        		通知
+				        	</div>
+				        	<ul class="dropdown-menu">
+				        		<li>
+				        			通知
+				        			<span class=""></span>
+				        		</li>
+				        		<li>
+				        			未读消息
+				        			<span class=""></span>
+				        		</li>
+				        		<li class="divider padding0"></li>
+				        		<li>
+				        			稍后处理
+				        			<span class=""></span>
+				        		</li>
+				        	</ul>
+				        </div>				        
+			        </div>
+			        <div class="modal-body clearfix" style="padding: 0;">
+			      		
+			        </div>
+			    </div>
+		    </div>
+		</div>
+		
+		<!--end 消息-->
+       
+		<nav class="navbar navbar-fixed-top boxShadow" id="nav_header">
+			<div class="container-fluid">
+				<div class="navbar-header dropdown">
+					<div class="navbar-brand" id="personDemo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<span class="glyphicon glyphicon-align-justify"> 个人项目</span>
+					</div>				
+					<ul class="dropdown-menu" aria-labelledby="personDemo" style="width: 300px;">
+					    <li>	
+					    	<a href="#">
+					    		<span class="glyphicon glyphicon-ok" ></span>
+					    		<span>					    			
+					    			个人项目					    			
+					    		</span>
+					    		<p style="text-indent: 1em;color: darkgray;">
+					    			您的个人工作空间
+					    		</p>					    			
+					    	</a>
+					    </li>
+					    <li role="separator" class="divider"></li>
+					    <li>
+					    	<a href="#" data-toggle="modal" data-target="#createPro">
+					    		<span class="glyphicon glyphicon-plus text-primary">创建企业</span>			    		
+					    	</a>
+					    </li>
+					</ul>
+				</div>
+				<div class="navbar-collapse collapse"  id="navbar1">
+					<form class="navbar-form navbar-left">
+				        <div class="form-group has-feedback">
+				        	<span class="glyphicon glyphicon-search form-control-feedback"></span>
+				            <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				    </form>
+				    <div class="nav navbar-brand dropdown">
+				    	<a href="#" id="addDemo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    	<span class="glyphicon glyphicon-plus-sign text-primary" ></span>
+					    </a>
+					    <ul class="dropdown-menu" aria-labelledby="addDemo">
+					    	<li>
+					    		<a href="#">
+					    			<span class="glyphicon glyphicon-folder-close"> 项目</span>
+					    		</a>
+					    	</li>
+					    	<li class="divider"></li>
+					    	<li>
+					    		<a href="#">
+					    			<span class="glyphicon glyphicon-book"> 任务</span>
+					    		</a>
+					    	</li>
+					    	<li>
+					    		<a href="#">
+					    			<span class="glyphicon glyphicon-file"> 文件</span>
+					    		</a>
+					    	</li>
+					    	<li>
+					    		<a href="#">
+					    			<span class="glyphicon glyphicon-briefcase"> 日程</span>
+					    		</a>
+					    	</li>
+					    	<li>
+					    		<a href="#">
+					    			<span class="glyphicon glyphicon-paperclip"> 分享</span>
+					    		</a>
+					    	</li>
+					    </ul>
+				    </div>
+				    
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" id="help" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="glyphicon glyphicon-question-sign"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="addDemo" style="width: 300px;">
+								<li style="padding:0 10px; text-align: center;">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							        	<span aria-hidden="true">&times;</span>
+							        </button>
+							        <h4>帮助</h4>
+								</li>
+								<li class="divider"></li>
+								<li style="padding:0 10px;">
+									<form>
+							      		<div class="form-group">
+									        <select id="advertise" name="advertise" class="form-control">
+									          <option selected="selected">想我提意见</option>
+									          <option>向老师提意见</option>
+									          <option>其他</option>
+									        </select>
+							      		</div>
+							      		<div class="form-group">
+											<textarea placeholder="可以描述一下你的问题" class="form-control"></textarea>
+							      		</div>
+							      		<div class="form-group">
+							      			<input type="button" value="发送" class="btn btn-block btn-primary"/>
+							      		</div>
+							      	</form>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+								<li>
+									<a href="#">使用视频</a>
+								</li>
+								<li>
+									<a href="#">使用中心</a>
+								</li>
+								<li>
+									<a href="#">新手指导</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#my">我的</a>
+						</li>
+						<li>
+							<a href="#">日历</a>
+						</li>
+						<li>
+							<a href="#" style="position: relative;" data-toggle="modal" data-target="#user_msg" >
+								<span class="glyphicon glyphicon-bell"></span>								
+		        				<span class="badge" style="position: absolute; top: 2px; left: 15px; color: white;background-color:dodgerblue ;">8</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="glyphicon glyphicon-comment"></span>
+							</a>
+							<div class="dropdown-menu" style="width: 300px;padding: 10px;">
+								<h4 class="text-center">
+									<span>聊天</span>
+									<span class="close">&times;</span>
+								</h4>
+								<hr />
+								<ul class="nav nav-stacked">
+									<li>
+										暂时没有聊天记录
+									</li>							
+								</ul>
+								<div class="addTask" style="margin-top:20px;color: deepskyblue;cursor: pointer;" data-toggle="modal" data-target="#startTalk">
+									<span class="glyphicon glyphicon-plus-sign"></span>
+									发起聊天
+								</div>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="badge" style="background:#e07e58;">益州</span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="addDemo" style="width: 300px;">
+								<li>
+									<a href="#">账号设置</a>
+								</li>
+								<li>
+									<a href="#">偏好设置</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#" style="color: blue;">升级</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">快捷键</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">下载应用</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">退出登录</a>
+								</li>
+							</ul>
+						</li>
+					</ul>	
+				</div>			
+			</div>		
+		</nav>
+		<!--主题内容-->
+		<div>
+			<iframe src="content.html" width="100%" height="680px" frameborder="0" name="content"></iframe>
+		</div>
+		<!--主题内容-->
+	</body>
+</html>

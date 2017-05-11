@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>主题内容</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/content.js"></script>
+	</head>
+	<body>
+		<!--start 创建项目-->
+		<div class="modal fade" id="newDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3">
+		    <div class="modal-dialog" role="document" style="width: 350px;">
+			    <div class="modal-content" >
+			        <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<span aria-hidden="true">&times;</span>
+				        </button>
+				        <h4 class="modal-title text-center">创建项目</h4>
+				        <hr />
+				        <img src="img/newDemobtn.png" class="img-responsive center-block"/>
+			        </div>
+			        <div class="modal-body">
+				      	<form>
+				      		<div class="form-group">
+				      			<input type="text" placeholder="项目" class="form-control"/>
+				      		</div>
+				      		<div class="form-group">
+				      			<textarea rows="1" placeholder="项目简介" class="form-control"></textarea>
+				      		</div>
+				      		<p>项目归属</p>
+				      		<div class="form-group">
+				      			<input type="text" placeholder="个人项目" class="form-control"/>
+				      		</div>
+				      		<div class="form-group">
+				      			<input type="button" value="完成并创建" class="form-control btn btn-block btn-primary" />
+				      		</div>
+				      	</form>
+				      	<button type="button" class="btn btn-default btn-block" style="border-color: deepskyblue;color: deepskyblue;">从模板中创建</button>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+		<!--end 创建项目-->
+		<div class="container">
+			<div class="nav clearfix">
+				<div class="pull-right">
+					<a class="mod"><span class="glyphicon glyphicon-th-large btn-lg"></span></a>					
+					<a class="mod">
+						<span class="glyphicon glyphicon-list btn-lg"></span>
+					</a>
+				</div>
+			</div>
+			<div id="net_look" >
+				<p class="h3">我拥有的项目</p>
+				<div class="clearfix" style="margin-bottom: 80px;">
+					<a href="exDemo.html" target="content" class="pull-left exampleDemo" id="exampleDemo">						
+						<h4>示例项目</h4>
+					</a>
+					<div class="pull-left newDemo" id="newDemo" data-toggle="modal" data-target="#newDemo">
+						<a href="#">
+							<span class="glyphicon glyphicon-plus-sign btn-lg"></span>
+							<h4>创建新项目</h4>
+						</a>
+					</div>
+				</div>
+				<p class="h3">我参与的项目</p>
+				<div class="clearfix" style="margin-bottom: 80px;">
+					<a href="#" class="pull-left exampleDemo" id="userEDemo">
+						<h4 style="color: black;">毕业设计四组</h4>
+						<img src="img/1.jpg" class="img-responsive"/>
+					</a>
+				</div>
+				<p class="h3">已归档的项目 · <a role="button" data-toggle="collapse" href="#finish" aria-expanded="false" aria-controls="finish">显示</a></p>
+				<div class="clearfix" style="margin-bottom: 80px;" id="finish">
+					<a href="#" class="pull-left exampleDemo" id="userEDemo">
+						<h4 style="color: black;">毕业设计四组</h4>
+						<img src="img/1.jpg" class="img-responsive"/>
+					</a>
+				</div>
+			</div>
+			<div id="list_look" class="hidden">
+				<p class="h3">我拥有的项目</p>
+				<div class="clearfix" >
+					<div class="exampleDemo" id="exampleDemo"></div>						
+					<h4>示例项目</h4>	
+					<div class="pull-right">
+						<span></span>
+					</div>
+				</div>	
+				<div class="clearfix" >
+					<div class="exampleDemo" id="exampleDemo" style="text-align: center;line-height: 40px;">
+						<span class="glyphicon glyphicon-plus"></span>
+					</div>						
+					<h4>创建新项目</h4>	
+					<div class="pull-right">
+						<span></span>
+					</div>
+				</div>
+				<p class="h3">我参与的项目</p>
+				<div class="clearfix" >
+					<div class="exampleDemo" id="exampleDemo">
+						<img src="img/1.jpg" class="img-responsive" />
+					</div>						
+					<h4>毕业设计四组</h4>	
+					<div class="pull-right">
+						<span></span>
+					</div>
+				</div>
+				<p class="h3">已归档的项目 · <a role="button" data-toggle="collapse" href="#list_finish" aria-expanded="false" aria-controls="finish">显示</a></p>
+				<div class="clearfix"  id="list_finish">
+					<div class="exampleDemo" id="exampleDemo">
+						<img src="img/1.jpg" class="img-responsive" />
+					</div>						
+					<h4>毕业设计四组</h4>	
+					<div class="pull-right">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

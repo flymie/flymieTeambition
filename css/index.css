@@ -1,0 +1,66 @@
+body{
+	padding-top: 70px;
+	background-color: #F5F5F5;
+}
+textarea{
+	resize: none;
+	overflow: auto;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.boxShadow{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5);/*for ie6,7,8*/  
+	background-color: white;  
+	-moz-box-shadow:0 2px 5px #969696;/*firefox*/  
+	-webkit-box-shadow:0 2px 5px #969696;/*webkit*/  
+	box-shadow:0 2px 5px #969696;/*opera或ie9*/ 
+}
+#nav_header{							
+	z-index: 9999999999;
+}
+#my{
+	padding: 0 !important;
+}
+#my .modal-header a{
+	font-size: 15px;
+	margin-right: 10px;
+	color: black;
+	border-bottom: 1px solid white;
+}
+#my .modal-header a:hover{
+	border-bottom: 1px solid deepskyblue;
+}
+
+#startTalk ul{
+	width: 160px;
+	height: 500px;
+	border-right: 1px solid gainsboro;
+}
+#startTalk ul li{
+	padding: 10px;
+	text-align: center;
+	border-top:1px solid gainsboro ;
+	border-bottom: 1px solid gainsboro;
+	margin: 0;
+	cursor: pointer;
+}
+#startTalk ul li:hover{
+	color: deepskyblue;
+}
+#startTalk form{
+	width:610px ;
+	height: 500px;
+}
+#user_msg .modal-title li{
+	padding: 10px;
+}
+.padding0{
+	padding: 0 !important;
+}
+#user_msg .modal-title li:hover{
+	background: #F5F5F5;
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>任务</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/task.js"></script>
+		<style type="text/css">
+			table td{
+				padding: 15px !important;
+			}
+			.td_center{
+				vertical-align: middle !important;
+				text-align: center;
+			}
+			.like_btn{
+				float: left;
+			}
+			#task .header {
+				height: 40px;
+				border-bottom: 1px solid gainsboro;
+				position: relative;
+			}
+			.active{
+				border-bottom: 1px solid deepskyblue !important;
+			}
+			#task .like_btn{				
+				text-align: center;
+				height: 41px;
+				font-size: 15px;
+				padding: 10px 0 ;
+				color: black;
+				cursor:pointer;
+				border-bottom: 1px solid white;
+				margin-right:30px;
+			}
+			#task .like_btn:hover{
+				border-bottom: 1px solid deepskyblue;
+			}		
+			.like_btn_control ul{
+				width: 100%;
+				border-left:2px solid orange ;
+				margin-bottom:2px ;
+				cursor: pointer;
+			}
+			.like_btn_control li{
+				padding: 10px;
+				vertical-align:middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" id="task">
+			<div class="header clearfix" style="margin-bottom:20px ;">
+				<div class="like_btn">我执行的</div>
+				<div class="like_btn">我创建的</div>
+				<div class="like_btn active" >我参与的</div>
+			</div>
+			<div class="like_btn_control hidden">
+	      		<table class="table table-hover table-responsive">
+	            	<tbody>	
+		            	<tr>
+			            	<td style="width: 90%;">
+			                    <a href="#">
+			      					<span class="glyphicon glyphicon-folder-close"></span>
+			      					<span>毕业小组讨论</span>
+			      				</a>
+			                </td>
+			                <td>
+			                	2017.09.09
+			                </td>
+		            	</tr>		                
+		            </tbody>
+		        </table>
+			</div>
+			<div class="like_btn_control hidden">
+				<table class="table table-hover table-responsive">
+	            	<tbody>	
+		            	<tr>
+		            		<td class="td_center">
+		            			<input type="checkbox" />
+		            		</td>
+		            		<td class="td_center">
+		            			<img src="img/1.jpg" width="30px" height="30px" class="img-circle"/>
+		            		</td>
+			            	<td style="width: 80%;">
+			                    <strong class="h4">红色表示：非常紧急的事情</strong>
+			                    <em>示例项目</em>
+			                </td>
+			                <td class="td_center">
+			                	<em>示例项目</em>
+			                </td>
+		            	</tr>	
+		            	<tr>
+		            		<td class="td_center">
+		            			<input type="checkbox" />
+		            		</td>
+		            		<td class="td_center">
+		            			<img src="img/1.jpg" width="30px" height="30px" class="img-circle"/>
+		            		</td>
+			            	<td style="width: 80%;">
+			                    <strong class="h4">红色表示：非常紧急的事情</strong>
+			                    <em>示例项目</em>
+			                </td>
+			                <td class="td_center">
+			                	<em>示例项目</em>
+			                </td>
+		            	</tr>
+		            	<tr>
+		            		<td class="td_center">
+		            			<input type="checkbox" />
+		            		</td >
+		            		<td class="td_center">
+		            			<img src="img/1.jpg" width="30px" height="30px" class="img-circle"/>
+		            		</td>
+			            	<td style="width: 80%;">
+			                    <strong class="h4">红色表示：非常紧急的事情</strong>
+			                    <em>示例项目</em>
+			                </td>
+			                <td class="td_center">
+			                	<em>示例项目</em>
+			                </td>
+		            	</tr>
+		            </tbody>
+		       </table>
+			</div>
+			
+      		<div class="like_btn_control clearfix ">
+	      		<ul class="nav navbar-nav">
+	      			<li>
+	      				<input type="checkbox" />	  	            	    				
+	      			</li>
+	      			<li>
+		            	<img src="img/1.jpg" width="30px" height="30px" class="img-circle"/>	      				
+	      			</li>
+	      			<li>
+	      				<strong class="h4">红色表示：非常紧急的事情</strong>
+			            <em>示例项目</em>
+	      			</li>
+	      		</ul>
+	      		<ul class="nav navbar-nav">
+	      			<li>
+		            	<input type="checkbox" />	      				
+	      			</li>
+	      			<li>
+		            	<img src="img/1.jpg" width="30px" height="30px" class="img-circle"/>	      				
+	      			</li>
+	      			<li>
+	      				<strong class="h4">红色表示：非常紧急的事情</strong>
+			            <em>示例项目</em>
+	      			</li>
+	      		</ul>
+			</div>
+      	</div>
+	</body>
+</html>

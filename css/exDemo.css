@@ -1,0 +1,234 @@
+.boxShadow{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5);/*for ie6,7,8*/  
+	background-color: white;  
+	-moz-box-shadow:0 2px 5px #969696;/*firefox*/  
+	-webkit-box-shadow:0 2px 5px #969696;/*webkit*/  
+	box-shadow:0 2px 5px #969696;/*opera或ie9*/ 
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow: hidden;
+}
+.menu_down{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+.menu_down:hover{
+	color: deepskyblue;
+}
+.like_btn_control ul{
+	width: 100%;
+	border-left:2px solid orange ;
+	margin-bottom:2px ;
+	cursor: pointer;
+	background: white;
+}
+.like_btn_control li{
+	padding: 10px;
+	vertical-align:middle;
+}
+.addTask{
+	margin-top: 20px;
+	padding: 10px ;
+	color: deepskyblue;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+.addTask:hover{
+	background-color: #F5F5F5;
+}
+#star{
+	padding: 0 5px;
+}
+#nav{
+	position: relative;
+}
+#nav  img{
+	width: 90px;
+	height: 50px;
+	vertical-align: middle;
+	background: deepskyblue;
+}
+#nav_sec{
+	left: 40%;
+	position: absolute;
+}
+#nav_sec a{
+	color: black;
+	font-size: 15px;
+	border-bottom: 1px solid white;
+}
+#nav_sec a:hover{
+	border-bottom: 1px solid deepskyblue;
+}
+#nav_right li{
+	padding: 0 10px;
+	cursor: pointer;
+}
+#nav_right li:hover{
+	color: deepskyblue;
+}
+#chat{
+	position: absolute;
+	top: 51px;
+	padding: 10px;
+	right:-300px;
+	width: 300px;
+	height: 700px;
+	background: #F5F5F5;
+	border: 1px solid #b4a3a3;
+	font-size: 18px;
+}
+#chat h4{
+	text-align: center;
+}
+#chat .close{
+	float: right;
+	font-size: 22px;
+	padding: 0;
+}
+#chat img{
+	width: 40px ;
+	height:40px;
+	vertical-align: middle;
+}
+#chat .name{
+	color: black;
+	font-size: 15px;
+	margin-left: 10px;
+}
+#chat_list{
+	position: relative;
+}
+#chat_list li{
+	padding: 10px;
+	cursor: pointer;
+}
+#chat_list li:hover{
+	background-color:#D7D1D1;
+}
+#chat_list p{
+	font-size: 12px;
+	padding: 0;
+	margin-left: 10px;
+}
+#chat_list .big_img{
+	width: 60px;
+	height: 60px;
+	vertical-align: top;
+}
+#chat_list .chat_user_msg{
+	width: 300px;
+	background: white;
+	padding: 10px;
+	top: 0;
+	left:-320px ;
+	position: absolute;
+}
+#chat_list .chat_user_msg a{
+	color: #a7a0a0;
+	font-size: 14px;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+}
+#chat_list a:hover{
+	background-color:#F5F5F5 ;
+}
+
+#view{
+	position: absolute;
+	top: 51px;
+	padding: 10px;
+	right:-300px;
+	width: 300px;
+	height: 700px;
+	background: #F5F5F5;
+	border: 1px solid #b4a3a3;
+	font-size: 18px;
+}
+#view h4{
+	text-align: center;
+}
+#view .close{
+	float: right;
+	font-size: 22px;
+	padding: 0;
+}
+#view ul{
+	width: 280px;
+}
+#view li{
+	padding: 10px;
+}
+#view li:hover{
+	background-color: #F5F5F5;
+}
+#view li.special{
+	color: blue;
+	border-top: 1px solid grey;
+}
+#view p{
+	padding:3px 5px;
+	font-size: 14px;
+	color: gray;
+	cursor: pointer;
+}
+#view p:hover{
+	background-color: white;
+}
+
+#menu{
+	position: absolute;
+	top: 51px;
+	padding: 10px;
+	right:-300px;
+	width: 300px;
+	height: 700px;
+	font-size: 14px;
+	background: #F5F5F5;
+	border: 1px solid #b4a3a3;
+	font-size: 18px;
+}
+#menu h4{
+	text-align: center;
+}
+#menu .close{
+	float: right;
+	font-size: 22px;
+	padding: 0;
+}
+#menu li{
+	font-size: 14px;
+	padding: 5px;
+}
+#menu li:hover{
+	background-color: white;
+}
+#menu .tasks{
+	font-size: 14px;
+	padding: 5px;
+	position: relative;
+}
+#menu .widths{
+	width: 120px;
+	height: 60px;
+}
+#menu .widths:hover{
+	background: white;
+}
+#claime{
+	color: lawngreen;
+	font-size: 20px;
+}
+#today{
+	color: orange;
+	font-size: 20px;
+}
+
